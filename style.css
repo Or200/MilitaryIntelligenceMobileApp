@@ -10,7 +10,7 @@ html {
 .parent {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 450px 30px 140px 50px 150px;
+  grid-template-rows: 100px 450px 30px 140px 50px 200px;
   grid-column-gap: 0px;
   grid-row-gap: 3%;
 }
@@ -251,6 +251,26 @@ html {
 }
 
 .footer {
+  margin-top: 120px;
   grid-area: 6 / 1 / 7 / 2;
-  background: yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  color: gray;
+  padding-bottom: 10px;
+  background: #1a1925;
+  border-top: rgb(61, 60, 60) solid 1px;;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 3px;
+  
 }
