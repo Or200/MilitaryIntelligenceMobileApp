@@ -10,7 +10,7 @@ html {
 .parent {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 450px 30px 200px 100px 150px;
+  grid-template-rows: 100px 450px 30px 140px 30px 150px;
   grid-column-gap: 0px;
   grid-row-gap: 3%;
 }
@@ -40,7 +40,7 @@ html {
 
 .header img:hover {
   rotate: 180deg;
-  box-shadow: 5px 5px 5px 5px #09dc3a;
+  box-shadow: 0px 0px 40px 2px #09dc3a;
 }
 
 .header-left {
@@ -151,8 +151,74 @@ html {
 }
 
 .section3 {
+  display: flex;
+  flex-wrap: wrap;
   grid-area: 4 / 1 / 5 / 2;
-  background: yellow;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card {
+  margin-right: 20px;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background: #1a1925;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.card-title {
+  margin: 3%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+.card-title span {
+  padding: 5px;
+}
+
+.card-msg {
+  margin: 3%;
+  color: rgb(223, 220, 220);
+}
+
+.card-load {
+  display: flex;
+  align-items: center;
+  margin: 3%;
+  color: #09dc3a;
+}
+.card-load span {
+  margin-left: 10px;
+}
+.card-load div {
+  background-color: #09dc3a;
+  height: 10px;
+  width: 250px;
+  color: #09dc3a;
+  border-radius: 5px;
+}
+
+.title-of-card {
+  border: rgb(61, 60, 60) solid 1px;
+  border-radius: 7px;
+}
+
+.border-green {
+  border-left: 5px solid #09dc3a;
+}
+
+.border-orange {
+  border-left: 5px solid #f7d205;
+}
+
+.red-title {
+  color: #e6094b;
+  border: #e6094b solid 1px;
+  background: #e6094b3a;
 }
 
 .section4 {
