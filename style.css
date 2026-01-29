@@ -10,7 +10,7 @@ html {
 .parent {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 450px 30px 140px 30px 150px;
+  grid-template-rows: 100px 450px 30px 140px 50px 150px;
   grid-column-gap: 0px;
   grid-row-gap: 3%;
 }
@@ -152,7 +152,8 @@ html {
 
 .section3 {
   display: flex;
-  flex-wrap: wrap;
+  /* width: 80%; */
+  /* flex-wrap: wrap; */
   grid-area: 4 / 1 / 5 / 2;
   margin-left: 10%;
   margin-right: 10%;
@@ -223,8 +224,32 @@ html {
 
 .section4 {
   grid-area: 5 / 1 / 6 / 2;
-  background: yellow;
+  color: #e6094b;
+  border: #e6094b solid 1px;
+  background: #e6094b3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 5px;
 }
+
+.point {
+  width: 41%;
+  display: block;
+  justify-content: left;
+  font-size: 25px;
+  padding-left: 5px;
+}
+
+.point2 {
+  width: 59%;
+  display: block;
+  justify-content: left;
+}
+
 .footer {
   grid-area: 6 / 1 / 7 / 2;
   background: yellow;
